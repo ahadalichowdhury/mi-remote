@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MI Remote</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_loading">Loading…</string>
+    
+    <!-- Mode Selection -->
+    <string name="mode_selection_title">Select Connection Mode</string>
+    <string name="wifi_remote">Wi-Fi Remote</string>
+    <string name="bluetooth_remote">Bluetooth Remote</string>
+    <string name="wifi_remote_description">Control TV via ADB over Wi-Fi</string>
+    <string name="bluetooth_remote_description">Control TV via Bluetooth HID</string>
+    
+    <!-- Discovery Screen -->
+    <string name="discovery_title">Discover Devices</string>
+    <string name="scanning_devices">Scanning for devices…</string>
+    <string name="no_devices_found">No devices found</string>
+    <string name="connect">Connect</string>
+    <string name="connecting">Connecting…</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="manual_ip">Manual IP Entry</string>
+    <string name="enter_ip_address">Enter IP Address</string>
+    <string name="ip_address_hint">192.168.1.100</string>
+    <string name="refresh">Refresh</string>
+    
+    <!-- Remote Control -->
+    <string name="remote_title">Remote Control</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="ok">OK</string>
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="volume_up">Volume Up</string>
+    <string name="volume_down">Volume Down</string>
+    <string name="disconnect">Disconnect</string>
+    
+    <!-- Errors -->
+    <string name="error_connection_failed">Connection failed</string>
+    <string name="error_device_not_found">Device not found</string>
+    <string name="error_permission_required">Permission required</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported</string>
+    <string name="error_bluetooth_disabled">Bluetooth is disabled</string>
+    <string name="error_wifi_disabled">Wi-Fi is disabled</string>
+    
+    <!-- Permissions -->
+    <string name="permission_bluetooth_rationale">Bluetooth permission is required to discover and connect to devices</string>
+    <string name="permission_location_rationale">Location permission is required for Bluetooth device discovery</string>
+    <string name="permission_wifi_rationale">Wi-Fi permission is required to discover devices on your network</string>
+</resources>

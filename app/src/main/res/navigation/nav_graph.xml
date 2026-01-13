@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/modeSelectionFragment">
+
+    <fragment
+        android:id="@+id/modeSelectionFragment"
+        android:name="com.miremote.presentation.mode_selection.ModeSelectionFragment"
+        android:label="@string/mode_selection_title"
+        tools:layout="@layout/fragment_mode_selection">
+
+        <action
+            android:id="@+id/action_modeSelectionFragment_to_discoveryFragment"
+            app:destination="@id/discoveryFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/discoveryFragment"
+        android:name="com.miremote.presentation.discovery.DiscoveryFragment"
+        android:label="@string/discovery_title"
+        tools:layout="@layout/fragment_discovery">
+
+        <argument
+            android:name="connectionMode"
+            app:argType="string"
+            android:defaultValue="WIFI" />
+
+        <action
+            android:id="@+id/action_discoveryFragment_to_remoteFragment"
+            app:destination="@id/remoteFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/remoteFragment"
+        android:name="com.miremote.presentation.remote.RemoteFragment"
+        android:label="@string/remote_title"
+        tools:layout="@layout/fragment_remote">
+
+        <argument
+            android:name="deviceName"
+            app:argType="string" />
+        <argument
+            android:name="deviceAddress"
+            app:argType="string" />
+        <argument
+            android:name="deviceType"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
