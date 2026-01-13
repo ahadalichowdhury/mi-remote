@@ -2,7 +2,8 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.parcelize")
-    id("androidx.navigation.safeargs.kotlin")
+    // Navigation Safe Args plugin temporarily removed due to Gradle 9.2.1 compatibility
+    // id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
